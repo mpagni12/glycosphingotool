@@ -46,26 +46,26 @@ The source SphingomapkeyV1.4.xls can be found in src/glycosphingotool/assets
 | Identifier | Name | SMILES for the code |
 |------------|------|---------------------|
 | [CHEBI:7896](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:7896) | hexadecanoate | `CCCCCCCCCCCCCCC` |
-| [CHEBI:32372](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32372) | palmitoleate | `CCCCCC\C=C/CCCCCCC` |
-| [CHEBI:25629](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:25629) | octadecanoate | `C(CCCCCCCCCC)CCCCCC` |
-| [CHEBI:30823](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30823) | oleate | `CCCCCCCC\C=C/CCCCCCC` |
-| [CHEBI:30245](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30245) | linoleate | `CCCCC\C=C/C\C=C/CCCCCCC` |
-| [CHEBI:77222](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:77222) | (6Z,9Z,12Z,15Z)-octadecatetraenoate | `CC\C=C/C\C=C/C\C=C/C\C=C/CCCC` |
+| [CHEBI:32372](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32372) | palmitoleate | `CCCCCCC\C=C/CCCCCC` |
+| [CHEBI:25629](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:25629) | octadecanoate | `CCCCCCCCCCCCCCCCC` |
+| [CHEBI:30823](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30823) | oleate | `CCCCCCC\C=C/CCCCCCCC` |
+| [CHEBI:30245](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30245) | linoleate | `CCCCCCC\C=C/C\C=C/CCCCC` |
+| [CHEBI:77222](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:77222) | (6Z,9Z,12Z,15Z)-octadecatetraenoate | `CCCC\C=C/C\C=C/C\C=C/C\C=C/CC` |
 | [CHEBI:32360](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32360) | icosanoate | `CCCCCCCCCCCCCCCCCCC` |
-| [CHEBI:71589](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:71589) | all-cis-icosa-8,11,14-trienoate | `CCCCC\C=C/C\C=C/C\C=C/CCCCCC` |
+| [CHEBI:71589](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:71589) | all-cis-icosa-8,11,14-trienoate | `CCCCCC\C=C/C\C=C/C\C=C/CCCCC` |
 | [CHEBI:32395](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32395) | arachidonate | `CCCCC\C=C/C\C=C/C\C=C/C\C=C/CCC` |
-| [CHEBI:58562](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:58562) | all-cis-5,8,11,14,17-icosapentaenoate | `CC\C=C/C\C=C/C\C=C/C\C=C/C\C=C/CCC` |
+| [CHEBI:58562](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:58562) | all-cis-5,8,11,14,17-icosapentaenoate | `CCC\C=C/C\C=C/C\C=C/C\C=C/C\C=C/CC` |
 | [CHEBI:23858](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:23858) | behenate | `CCCCCCCCCCCCCCCCCCCC` |
 | [CHEBI:77016](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:77016) | (4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoate | `CC\C=C/C\C=C/C\C=C/C\C=C/C\C=C/C\C=C/CC` |
 | [CHEBI:31014](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:31014) | tetracosanoate | `CCCCCCCCCCCCCCCCCCCCCCC` |
-| [CHEBI:32392](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32392) | (15Z)-tetracosenoate | `CCCCCCCC\C=C/CCCCCCCCCCCCC` |
+| [CHEBI:32392](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32392) | (15Z)-tetracosenoate | `CCCCCCCCCCCCC\C=C/CCCCCCCC` |
 | [CHEBI:31013](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:31013) | cerotate | `CCCCCCCCCCCCCCCCCCCCCCCCC` |
-| [CHEBI:77221](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:77221) | (17Z)-hexacosenoate | `CCCCCCCC\C=C/CCCCCCCCCCCCCCC` |
-| [CHEBI:65097](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:65097) | 2-hydroxyhexadecanoate | `CCCCCCCCCCCCCCC(O)` |
-| [CHEBI:76724](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76724) | 2-hydroxyoctadecanoate | `CCCCCCCCCCCCCCCCC(O)` |
-| [CHEBI:76732](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76732) | 2-hydroxyarachidate | `CCCCCCCCCCCCCCCCCCC(O)` |
-| [CHEBI:76722](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76722) | 2-hydroxybehenate | `CCCCCCCCCCCCCCCCCCCCC(O)` |
-| [CHEBI:76723](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76723) | 2-hydroxytetracosanoate | `CCCCCCCCCCCCCCCCCCCCCCC(O)` |
-| [CHEBI:84324](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:84324) | 2-hydroxynervonate | `CCCCCCCC\C=C/CCCCCCCCCCCCC(O)` |
-| [CHEBI:76728](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76728) | 2-hydroxyhexacosanoate | `CCCCCCCCCCCCCCCCCCCCCCCCC(O)` |
+| [CHEBI:77221](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:77221) | (17Z)-hexacosenoate | `CCCCCCCCCCCCCCC\C=C/CCCCCCCC` |
+| [CHEBI:65097](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:65097) | 2-hydroxyhexadecanoate | `C(O)CCCCCCCCCCCCCC` |
+| [CHEBI:76724](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76724) | 2-hydroxyoctadecanoate | `C(O)CCCCCCCCCCCCCCCC` |
+| [CHEBI:76732](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76732) | 2-hydroxyarachidate | `C(O)CCCCCCCCCCCCCCCCCC` |
+| [CHEBI:76722](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76722) | 2-hydroxybehenate | `C(O)CCCCCCCCCCCCCCCCCCCC` |
+| [CHEBI:76723](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76723) | 2-hydroxytetracosanoate | `C(O)CCCCCCCCCCCCCCCCCCCCCC` |
+| [CHEBI:84324](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:84324) | 2-hydroxynervonate | `C(O)CCCCCCCCCCCC\C=C/CCCCCCCC` |
+| [CHEBI:76728](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76728) | 2-hydroxyhexacosanoate | `C(O)CCCCCCCCCCCCCCCCCCCCCCCC` |
 
