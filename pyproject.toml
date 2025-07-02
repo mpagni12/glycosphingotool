@@ -1,0 +1,23 @@
+[project]
+name = "glycosphingotool"
+version = "0.1.0"
+description = "A CLI to transform glycan nomenclature into SMILES and reactions"
+authors = [
+  { name="Your Name", email="you@example.com" }
+]
+dependencies = [
+  "click>=8.1",
+  "rdkit>=2023.03.1",
+  "pandas>=1.4",
+  "networkx>=3.0",
+  "openpyxl>=3.1"
+]
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.scripts]
+glycosphingotool = "glycosphingotool.cli:cli"
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
