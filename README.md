@@ -9,7 +9,7 @@ glycosphingotool convert "NeuAcalpha2-3Galbeta1-4GlcCer" --nacyl CCC --sphingoid
 * Generate synthesis reactions for glyco nomenclature of a sphingolipid, generate reactions SMILES, RInChI and Web-RInChIKeys with defined n-acyl and sphingoid base
 
 ```bash
-glycosphingotool generate "NeuAcalpha2-3Galbeta1-4GlcCer" --nacyl CCC --sphingoid "[C@H](O)/C=C/CC" --output-folder "NeuAcalpha2-3Galbeta1-4GlcCer"
+glycosphingotool generate "NeuAcalpha2-3Galbeta1-4GlcCer" --nacyl CCC --sphingoid "[C@H](O)/C=C/CC" --output-folder "results_NeuAcalpha2-3Galbeta1-4GlcCer"
 ```
 
 * Process all the Excel file downloaded from SphingoMAP (the original link is currently broken at the original resource)
