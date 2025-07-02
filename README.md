@@ -68,7 +68,13 @@ The source SphingomapkeyV1.4.xls can be found in src/glycosphingotool/assets
 | [CHEBI:76723](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76723) | 2-hydroxytetracosanoate | `C(O)CCCCCCCCCCCCCCCCCCCCCC` |
 | [CHEBI:84324](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:84324) | 2-hydroxynervonate | `C(O)CCCCCCCCCCCC\C=C/CCCCCCCC` |
 | [CHEBI:76728](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76728) | 2-hydroxyhexacosanoate | `C(O)CCCCCCCCCCCCCCCCCCCCCCCC` |
-
+* The systematic enumeration can be done as following:
+```bash
+bash generate_commands.sh > run_all.sh
+```
+```bash
+bash run_all.sh
+```
 ## Underlying algorithm
 
 The identification of reactions necessary for synthesis is based on recursive graph backtracking
