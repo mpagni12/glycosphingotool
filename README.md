@@ -69,3 +69,40 @@ The source SphingomapkeyV1.4.xls can be found in src/glycosphingotool/assets
 | [CHEBI:84324](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:84324) | 2-hydroxynervonate | `C(O)CCCCCCCCCCCC\C=C/CCCCCCCC` |
 | [CHEBI:76728](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76728) | 2-hydroxyhexacosanoate | `C(O)CCCCCCCCCCCCCCCCCCCCCCCC` |
 
+## Underlying algorithm
+
+The identification of reactions necessary for synthesis is based on recursive graph backtracking
+
+```python
+import networkx as nx
+
+def custom_dfs(graph, node, visited=None, result=None):
+    """
+    depth first search
+    """
+    if visited is None:
+        visited = set()  # To keep track of visited nodes
+    if result is None:
+        result = []  # To store the traversal order
+
+    # Mark the current node as visited and add to the result list
+    visited.add(node)
+    result.append(node)  # Process the node
+
+    # Recur for all the neighbors (children in a tree context)
+    for neighbor in graph.neighbors(node):
+        if neighbor not in visited:
+            custom_dfs(graph, neighbor, visited, result)
+            result.append(node)  # Add the node again on return to represent backtracking
+
+    return result
+
+# Example graph creation
+G = nx.DiGraph()
+edges = [('A', 'B'), ('A', 'C'), ('B', 'D'), ('B', 'E'), ('C', 'F'), ('C', 'G')]
+G.add_edges_from(edges)
+
+# Start DFS from the root node 'A'
+traversal_result = custom_dfs(G, 'A')
+print("Traversal Result:", traversal_result)
+```
