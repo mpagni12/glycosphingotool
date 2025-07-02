@@ -25,7 +25,7 @@ The source SphingomapkeyV1.4.xls can be found in src/glycosphingotool/assets
 
 | Identifier                                                                                                           | Name                                   | SMILES for the code           |
 |----------------------------------------------------------------------------------------------------------------------|----------------------------------------|-------------------|
-| [SLM:000000035](https://www.swisslipids.org/#/entity/SLM:000000035/)                                                 | sphinganine                            | `CCCCCCCCCCCCCCC[C@@H](O)`  |
+| [SLM:000000035](https://www.swisslipids.org/#/entity/SLM:000000035/)                                                 | sphinganine                            | `[C@H](O)CCCCCCCCCCCCCCC`  |
 | [SLM:000000412](https://www.swisslipids.org/#/entity/SLM:000000412/)                                                 | sphing-4-enine                         | `[C@H](O)/C=C/CCCCCCCCCCCCC`  |
 | [SLM:000000386](https://www.swisslipids.org/#/entity/SLM:000000386/)                                                 | 4-hydroxysphinganine                   | `[C@H](O)[C@H](O)CCCCCCCCCCCCCC`  |
 | [SLM:000000006](https://www.swisslipids.org/#/entity/SLM:000000006/)                                                 | 15-methylhexadecasphinganine           | `[C@H](O)CCCCCCCCCCC(C)CC`  |
