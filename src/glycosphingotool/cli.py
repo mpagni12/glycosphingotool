@@ -69,14 +69,15 @@ def process_all(input_xls, output_folder, nacyl, sphingoid):
     sphingomapkey_to_reactions(
         input_xls=input_xls,
         nacyl=nacyl,
-        sphingoid=sphingoid
+        sphingoid=sphingoid,
+        output_tsv=os.path.join(output_folder, 'sphingomapkey with reaction structures.tsv')
     )
 
     # run structures
     sphingomapkey_to_structures(nacyl=nacyl,
                                 sphingoid=sphingoid, 
                                 output_tsv=os.path.join(output_folder, 'SphingomapkeyV1.4.tsv'))
-    structures_path = f"{output_folder}/SphingomapkeyV1.4.tsv"
+    structures_path = os.path.join(output_folder, 'SphingomapkeyV1.4.tsv')
     click.echo(f"Structures saved to {structures_path}")
 
 if __name__ == "__main__":
