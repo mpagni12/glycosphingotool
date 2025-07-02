@@ -41,29 +41,31 @@ The source SphingomapkeyV1.4.xls can be found in src/glycosphingotool/assets
 | [SLM:000000865](https://www.swisslipids.org/#/entity/SLM:000000865/)                                                 | (4R)-hydroxyeicosasphinganine          | `[C@H](O)[C@H](O)CCCCCCCCCCCCCCCC`|
 
 # N-acyls
+`C([O-])=O` is dropped for the SMILES since it is accounted by the code
 
-| Identifier                                                                                   | Name                                   | SMILES for the code |
-|----------------------------------------------------------------------------------------------|----------------------------------------|---------------------|
-[CHEBI:7896](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:7896)                       | | |
-[CHEBI:32372](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32372)                     | | |
-[CHEBI:25629](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:25629)                     | | |
-[CHEBI:30823](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30823)                     | | |
-[CHEBI:30245](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30245)                     | | |
-[CHEBI:77222](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:77222)                     | | |
-[CHEBI:32360](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32360)                     | | |
-[CHEBI:71589](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:71589)                     | | |
-[CHEBI:32395](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32395)                     | | |
-[CHEBI:58562](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:58562)                     | | |
-[CHEBI:23858](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:23858)                     | | |
-[CHEBI:77016](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:77016)                     | | |
-[CHEBI:31014](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:31014)                     | | |
-[CHEBI:32392](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32392)                     | | |
-[CHEBI:31013](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:31013)                     | | |
-[CHEBI:77221](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:77221)                     | | |
-[CHEBI:65097](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:65097)                     | | |
-[CHEBI:76724](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76724)                     | | |
-[CHEBI:76732](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76732)                     | | |
-[CHEBI:76722](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76722)                     | | |
-[CHEBI:76723](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76723)                     | | |
-[CHEBI:84324](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:84324)                     | | |
-[CHEBI:76728](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76728)                     | | |
+| Identifier | Name | SMILES for the code |
+|------------|------|---------------------|
+| [CHEBI:7896](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:7896) | hexadecanoate | `CCCCCCCCCCCCCCC` |
+| [CHEBI:32372](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32372) | palmitoleate | `CCCCCC\C=C/CCCCCCC` |
+| [CHEBI:25629](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:25629) | octadecanoate | `C(CCCCCCCCCC)CCCCCC` |
+| [CHEBI:30823](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30823) | oleate | `CCCCCCCC\C=C/CCCCCCC` |
+| [CHEBI:30245](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30245) | linoleate | `CCCCC\C=C/C\C=C/CCCCCCC` |
+| [CHEBI:77222](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:77222) | (6Z,9Z,12Z,15Z)-octadecatetraenoate | `CC\C=C/C\C=C/C\C=C/C\C=C/CCCC` |
+| [CHEBI:32360](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32360) | icosanoate | `CCCCCCCCCCCCCCCCCCC` |
+| [CHEBI:71589](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:71589) | all-cis-icosa-8,11,14-trienoate | `CCCCC\C=C/C\C=C/C\C=C/CCCCCC` |
+| [CHEBI:32395](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32395) | arachidonate | `CCCCC\C=C/C\C=C/C\C=C/C\C=C/CCC` |
+| [CHEBI:58562](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:58562) | all-cis-5,8,11,14,17-icosapentaenoate | `CC\C=C/C\C=C/C\C=C/C\C=C/C\C=C/CCC` |
+| [CHEBI:23858](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:23858) | behenate | `CCCCCCCCCCCCCCCCCCCC` |
+| [CHEBI:77016](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:77016) | (4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoate | `CC\C=C/C\C=C/C\C=C/C\C=C/C\C=C/C\C=C/CC` |
+| [CHEBI:31014](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:31014) | tetracosanoate | `CCCCCCCCCCCCCCCCCCCCCCC` |
+| [CHEBI:32392](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32392) | (15Z)-tetracosenoate | `CCCCCCCC\C=C/CCCCCCCCCCCCC` |
+| [CHEBI:31013](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:31013) | cerotate | `CCCCCCCCCCCCCCCCCCCCCCCCC` |
+| [CHEBI:77221](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:77221) | (17Z)-hexacosenoate | `CCCCCCCC\C=C/CCCCCCCCCCCCCCC` |
+| [CHEBI:65097](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:65097) | 2-hydroxyhexadecanoate | `CCCCCCCCCCCCCCC(O)` |
+| [CHEBI:76724](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76724) | 2-hydroxyoctadecanoate | `CCCCCCCCCCCCCCCCC(O)` |
+| [CHEBI:76732](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76732) | 2-hydroxyarachidate | `CCCCCCCCCCCCCCCCCCC(O)` |
+| [CHEBI:76722](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76722) | 2-hydroxybehenate | `CCCCCCCCCCCCCCCCCCCCC(O)` |
+| [CHEBI:76723](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76723) | 2-hydroxytetracosanoate | `CCCCCCCCCCCCCCCCCCCCCCC(O)` |
+| [CHEBI:84324](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:84324) | 2-hydroxynervonate | `CCCCCCCC\C=C/CCCCCCCCCCCCC(O)` |
+| [CHEBI:76728](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76728) | 2-hydroxyhexacosanoate | `CCCCCCCCCCCCCCCCCCCCCCCCC(O)` |
+
