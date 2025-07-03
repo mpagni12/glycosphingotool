@@ -20,6 +20,11 @@ glycosphingotool process-all --output-folder 'results_SphingoMAP' --nacyl CCC --
 
 The source SphingomapkeyV1.4.xls can be found in src/glycosphingotool/assets
 
+* Extract all the compounds that were generated
+```bash
+glycosphingotool extract-cmp --output-folder results_sphinganine_hexadecanoate --sphingoid "[C@H](O)CCCCCCCCCCCCCCC"
+```
+
 # Sphingoid bases
 `[C@@H]([NH3+])CO` is removed since it is accounted in the code, the table summarises what should be used for --sphingoid option of the code
 
