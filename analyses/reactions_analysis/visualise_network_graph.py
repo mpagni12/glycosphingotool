@@ -5,10 +5,11 @@ import matplotlib.lines as mlines
 from matplotlib.lines import Line2D
 from rdkit import Chem
 from rdkit.Chem import inchi
+import os
 
 # Load data
-df_results = pd.read_csv('/Users/anasves/work/glycosphingotool/results_sphing-4-enine_hexadecanoate/sphingomapkey with reaction structures.tsv', sep='\t')
-compound_table = pd.read_csv('/Users/anasves/work/glycosphingotool/analyses/chebi_lipidmaps_match/compounds_with_chebis.tsv', sep='\t')
+df_results = pd.read_csv(os.path.join('..','..','results_sphing-4-enine_hexadecanoate','sphingomapkey with reaction structures.tsv'), sep='\t')
+compound_table = pd.read_csv(os.path.join('..','chebi_lipidmaps_match','compounds_with_chebis.tsv'), sep='\t')
 compound_table.dropna(subset=['InChIKey'], inplace=True)
 
 def smiles_to_inchikey(smiles):
