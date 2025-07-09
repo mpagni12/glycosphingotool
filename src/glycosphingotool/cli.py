@@ -2,6 +2,7 @@ import click
 import importlib.resources
 from .nomenclature import glycan_nomenclature_to_smiles
 from .reactions import generate_reactions
+from .compounds import process_participant_structures
 from .utils import sphingomapkey_to_reactions, sphingomapkey_to_structures
 import os
 
@@ -79,6 +80,27 @@ def process_all(input_xls, output_folder, nacyl, sphingoid):
                                 output_tsv=os.path.join(output_folder, 'SphingomapkeyV1.4.tsv'))
     structures_path = os.path.join(output_folder, 'SphingomapkeyV1.4.tsv')
     click.echo(f"Structures saved to {structures_path}")
+
+@cli.command()
+@click.option(
+    "--output-folder",
+    type=click.Path(file_okay=False, dir_okay=True),
+    required=True,
+    help="Directory in which input (output of generation) is stored"
+)
+@click.option(
+    "--nacyl",
+    default="CCCCCCCCCCCCCCC",
+    help="SMILES for n-acyl chain"
+)
+@click.option(
+    "--sphingoid",
+    default="[C@H](O)/C=C/CCCCCCCCCCCCC",
+    help="SMILES for sphingoid base"
+)
+def extract_cmp(output_folder, nacyl, sphingoid):
+    process_participant_structures(output_folder, nacyl, sphingoid)
+
 
 if __name__ == "__main__":
     cli()
