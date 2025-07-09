@@ -54,6 +54,8 @@ def sphingomapkey_to_reactions(
         reactions = enumerate_reactions_as_glyconomenclature(compound)
         total_reactions.extend(reactions)
 
+    total_reactions = list(set(total_reactions))
+    
     # store results in DataFrame instead of file
     results_df = pd.DataFrame(columns=["glyco_nomenclature", "rxnSMILES"])
 
@@ -72,8 +74,9 @@ def sphingomapkey_to_reactions(
         results_df.loc[len(results_df)] = [reaction_cmp_names, rxnsmiles]
     
     results_df.drop_duplicates(subset=["glyco_nomenclature"], inplace=True)
+
     print('After dropping duplicate glycan nomenclature reactions', len(results_df))
-    
+
     # add RInChI and RInChIKey columns
     rinchi=RInChI()
     print("Generating RInChI")
@@ -82,10 +85,6 @@ def sphingomapkey_to_reactions(
         axis=1,
         result_type="expand"
     )
-
-    results_df.drop_duplicates(subset=['RInChIKey'], inplace=True)
-
-    print('After dropping duplicate RInChIKey', len(results_df))
     results_df.to_csv(output_tsv, sep='\t', index=False)
     return results_df
 

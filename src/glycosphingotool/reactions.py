@@ -16,11 +16,13 @@ def generate_reactions(compound_glyconomenclature,
     total_reactions = []
     reactions = enumerate_reactions_as_glyconomenclature(compound_glyconomenclature)
     total_reactions.extend(reactions)
+    total_reactions = list(set(total_reactions))
 
     # store results in DataFrame instead of file
     results_df = pd.DataFrame(columns=["glyco_nomenclature", "rxnSMILES"])
 
     for reaction in total_reactions:
+
         rxnsmiles = nomenclature_reaction_to_biochem_structures(
             reaction,
             residues_properties,
@@ -42,9 +44,6 @@ def generate_reactions(compound_glyconomenclature,
         result_type="expand"
     )
 
-    results_df.drop_duplicates(subset=['RInChIKey'], inplace=True)
-
-    print('After dropping duplicate RInChIKey', len(results_df))
     results_df.to_csv(output_tsv, sep='\t', index=False)
 
 #________________________________________________________________________
@@ -79,7 +78,6 @@ def enumerate_reactions_as_glyconomenclature(compound_glyconomenclature):
                 yield item
 
     final_result[:] = unique(final_result)
-    #print(f'reactions_enumerated for {compound_glyconomenclature}:', len(final_result))
 
     return final_result
 
@@ -236,10 +234,10 @@ def rxnsmiles_to_rinchi(SMILES, rinchi):
         for reactant in reactants:
             molobj = Chem.MolFromSmiles(reactant)
             if not molobj:
-                print(reactant)
+                print('incorrect compound SMILES:', reactant)
         for product in products:
             molobj = Chem.MolFromSmiles(product)
             if not molobj:
-                print(product)
+                print('incorrect compound SMILES:', product)
 
         return None, None

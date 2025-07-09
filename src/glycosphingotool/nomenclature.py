@@ -24,13 +24,11 @@ def glycan_nomenclature_to_smiles(nomenclature_string, nacyl='CCCCCCCCCCCCCCC', 
         root_ceramide = 'GalCer'
 
     traversal_result = custom_dfs(graph, root_ceramide)
-    #print("Traversal Result:", traversal_result)
 
     already_met = []
     for index, node in enumerate(traversal_result):
         if node not in already_met:
-            #print(node)
-            #print(labeldict[node])
+
             if labeldict[node] == root_ceramide:
                 mol_ceramide = Chem.MolFromSmiles(residues_smiles[root_ceramide], sanitize=False)
             else:
@@ -38,8 +36,7 @@ def glycan_nomenclature_to_smiles(nomenclature_string, nacyl='CCCCCCCCCCCCCCC', 
                 smiles_sugar = residues_smiles[labeldict[node][:-3]]
                 smiles_sugar = add_prefix_to_atom_map(smiles_sugar, str(node)+'0')
                 mol_sugar = Chem.MolFromSmiles(smiles_sugar, sanitize=False)
-                #print(Chem.MolToSmiles(mol_sugar))
-                #print()
+
                 combined_mol = Chem.CombineMols(mol_ceramide, mol_sugar)
 
                 combined_mol = Chem.RWMol(combined_mol)
@@ -153,7 +150,6 @@ def add_prefix_to_atom_map(smiles, prefix):
 
 # Define a function to find atom by its mapping number
 def find_atom_by_map_number(mol, map_number):
-    #print(map_number)
     for atom in mol.GetAtoms():
         if atom.GetAtomMapNum() == map_number:
             return atom.GetIdx()
