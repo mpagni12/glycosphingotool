@@ -1,0 +1,44 @@
+lm_id	SphingoMap ID	overall_match	direct_match_R1	direct_match_R2	same_compound_different_protonation_R1	same_compound_different_protonation_R2	Formula	Category	Common Name	CHEBI_ID_lipidmaps	CHEBI_ID_R1	CHEBI_ID_R1_R2
+LMSP0601AL00	68	True	True	False	True	False	NeuAcalpha2-8NeuAcalpha2-8NeuAcalpha2-3Galbeta1-4GlcCer	Ganglio	GT3	78438	78438	197322, 79216
+LMSP0601AK00	67	True	False	True	False	True	NeuAcalpha2-8NeuAcalpha2-3Galbeta1-4GlcCer	Ganglio	GD3	79214	78436	79214
+LMSP0504AD00	33	True	True	False	True	False	Fucalpha1-2Galbeta1-3GlcNAcbeta1-3Galbeta1-4GlcCer	Lacto	type I H antigen	28743	28743	90802
+LMSP0601AY00	82	True	True	False	True	False	NeuAcalpha2-3Galbeta1-3GalNAcbeta1-4Galbeta1-4GlcCer	Ganglio	cis GM1, GM1b	78568	78568	90151
+LMSP0602AN00	16	True	False	False	True	False	HSO3-3GalCer		SM4s, SGC	18318	75956, 83651, 83654	82953
+LMSP0601AS00	75	True	False	False	True	False	NeuAcalpha2-3(NeuAcalpha2-3Galbeta1-3GalNAcbeta1-4)Galbeta1-4GlcCer	Ganglio	GD1a	18163	78445	82637
+LMSP0602AA00	356	True	False	False	True	False	HSO3-3Galbeta1-4GlcCer	Hemato	SM3, Lactosylsulfatide	37986	78426	90163
+LMSP0501AB00	3	True	True	False	True	False	Galbeta1-4GlcCer		LacCer, Cytolipin H	17950	138903, 17950	195546, 79208
+LMSP0601AJ00	15	True	False	False	True	False	NeuAcalpha2-3Galbeta1-4GlcCer	Ganglio	GM3	15681	60065	79210
+LMSP0501AC00	5	True	True	False	True	False	GalCer		galactocerebroside	18390	75975, 18390	143593
+LMSP0601AO00	71	True	False	False	True	False	NeuAcalpha2-8NeuAcalpha2-8NeuAcalpha2-3(GalNAcbeta1-4)Galbeta1-4GlcCer	Ganglio	GT2	61732	87788	141748
+LMSP0502AA00	7	True	True	False	True	False	Galalpha1-4Galbeta1-4GlcCer	Globo	GbOse3, p^k antigen	18313	18313, 84998	88154
+LMSP0504AC00	29	True	True	False	True	False	Galbeta1-3(Fucalpha1-4)GlcNAcbeta1-3Galbeta1-4GlcCer	Lacto	Lewis a; Lea	90292	90292	90811
+LMSP0505AD00	45	True	True	False	True	False	Fucalpha1-2Galbeta1-4GlcNAcbeta1-3Galbeta1-4GlcCer	NeoLacto	H1 glycolipid, type II antigen	28691	28691	90803
+LMSP0601EF00	42	True	False	False	True	False	NeuAcalpha2-3Galbeta1-4GlcNAcbeta1-3Galbeta1-4GlcCer	NeoLacto	sialosylparagloboside	36528	58665	90390
+LMSP0601BN00	130	True	False	False	True	False	NeuAcalpha2-8NeuAcalpha2-3Galbeta1-3GalNAcbeta1-4Galbeta1-4GlcCer	Ganglio	GD1c	87990	87787	90856
+LMSP0506AQ00	11	True	True	False	True	False	Galalpha1-3Galbeta1-4GlcCer	Isoglobo	iGbOse3	52570	52570	140817
+LMSP0601AR00	74	True	False	False	True	False	NeuAcalpha2-8NeuAcalpha2-8NeuAcalpha2-3(Galbeta1-3GalNAcbeta1-4)Galbeta1-4GlcCer	Ganglio	GT1c	87992	87789	141743
+LMSP0502AE00	21	True	True	False	True	False	Galbeta1-3GalNAcbeta1-3Galalpha1-4Galbeta1-4GlcCer	Globo	GbOse5, SSEA-3 antigen	62571	62571	140691
+LMSP0504AB00	8	True	True	False	True	False	Galbeta1-3GlcNAcbeta1-3Galbeta1-4GlcCer	Lacto	LcOse4, LM1, iso-LM1	17292	17292	90800
+LMSP0601AU00	77	True	False	False	True	False	NeuAcalpha2-8NeuAcalpha2-8NeuAcalpha2-3(NeuAcalpha2-3Galbeta1-3GalNAcbeta1-4)Galbeta1-4GlcCer	Ganglio	GQ1c	87994	87791	90513
+LMSP0601AW00	79	True	False	False	True	False	NeuAcalpha2-3(NeuAcalpha2-8NeuAcalpha2-3Galbeta1-3GalNacbeta1-4)Galbeta1-4GlcCer	Ganglio	GT1a	27691	78447	90501
+LMSP0601AM00	69	True	True	False	True	False	NeuAcalpha2-3(GalNAcbeta1-4)Galbeta1-4GlcCer	Ganglio	GM2	71502	71502	79218
+LMSP0601AA00	13	True	False	False	True	False	NeuAcalpha2-3GalCer		GM4	27499	78482	82643
+LMSP0601AV00	78	True	False	False	True	False	NeuAcalpha2-8NeuAcalpha2-3(NeuAcalpha2-8NeuAcalpha2-3Galbeta1-3GalNAcbeta1-4)Galbeta1-4GlcCer	Ganglio	GQ1b	27515	78455	90862
+LMSP0505AA00	12	True	True	False	True	False	Galbeta1-4GlcNAcbeta1-3Galbeta1-4GlcCer	NeoLacto	nLcOse4, paragloboside	17006	17006	90376
+LMSP0601DK00	30	True	False	False	True	False	NeuAcalpha2-3Galbeta1-3GlcNAcbeta1-3Galbeta1-4GlcCer	Lacto		27817	88073	142582
+LMSP0502AC00	19	True	True	False	True	False	GalNAcalpha1-3GalNAcbeta1-3Galalpha1-4Galbeta1-4GlcCer	Globo	Forssman antigen	18056	18056	90400
+LMSP0505AB00	39	True	True	False	True	False	Fucalpha1-3(Galbeta1-4)GlcNAcbeta1-3Galbeta1-4GlcCer	NeoLacto	X-hapten, SSEA-1, Lex-5	77240	77240	90379
+LMSP0601AN00	70	True	False	False	False	True	NeuAcalpha2-8NeuAcalpha2-3(GalNAcbeta1-4)Galbeta1-4GlcCer	Ganglio	GD2	79219	78542	79220
+LMSP0601AX00	80	True	False	False	True	False	NeuAcalpha2-8NeuAcalpha2-8NeuAcalpha2-3(NeuAcalpha2-8NeuAcalpha2-3Galbeta1-3GalNAcbeta1-4)Galbeta1-4GlcCer	Ganglio	GP1c	52602	87792	90512
+LMSP0501AA00	2	True	True	False	True	False	GlcCer		glucocerebroside	22801	233570, 22801	233569, 83264, 139517, 233567
+LMSP0601AT00	76	True	False	False	True	False	NeuAcalpha2-8NeuAcalpha2-3(NeuAcalpha2-3Galbeta1-3GalNAcbeta1-4)Galbeta1-4GlcCer	Ganglio	GT1b	28058	78452	82940
+LMSP0505AK00	52	True	True	False	True	False	GlcNAcbeta1-3Galbeta1-4GlcNAcbeta1-3Galbeta1-4GlcCer	NeoLacto	nLcOse5	142448	142448	144378
+LMSP0503AB00	81	True	True	False	True	False	Galbeta1-3GalNAcbeta1-4Galbeta1-4GlcCer	Ganglio	GgOse4, asialo-GM1 (AM1); GA1	27938	27938	88069
+LMSP0502AB00	18	True	True	False	True	False	GalNAcbeta1-3Galalpha1-4Galbeta1-4GlcCer	Globo	GbOse4, Globoside I/Cytolipin K	18259	18259	88167
+LMSP0509AA00	9	True	True	False	True	False	Galalpha1-4GalCer	Gala	CDG, Galabiosylceramide	143595	143595, 195431	143594
+LMSP0601AP00	72	True	False	False	True	False	NeuAcalpha2-3(Galbeta1-3GalNAcbeta1-4)Galbeta1-4GlcCer	Ganglio	GM1	18216	77709	82639
+LMSP0504AA00	4	True	True	False	True	False	GlcNAcbeta1-3Galbeta1-4GlcCer	Lacto	LacOse3, Amino CTH	17103	17103	142587
+LMSP0601DL00	32	True	False	False	True	False	NeuAcalpha2-3Galbeta1-3(Fucalpha1-4)GlcNAcbeta1-3Galbeta1-4GlcCer	Lacto	sialy1-Lea 	90092	88088	142607
+LMSP0601AQ00	73	True	False	False	True	False	NeuAcalpha2-8NeuAcalpha2-3(Galbeta1-3GalNAcbeta1-4)Galbeta1-4GlcCer	Ganglio	GD1b	28175	87785	82939
+LMSP0503AA00	17	True	True	False	True	False	GalNAcbeta1-4Galbeta1-4GlcCer	Ganglio	GgOse3, asialo-GM2, GA2, Tay-Sachs globoside	27731	27731	90085, 195476
+LMSP0502AI00	26	True	True	False	True	False	Fucalpha1-2Galbeta1-3GalNAcbeta1-3Galalpha1-4Galbeta1-4GlcCer	Globo	type IV H	62649	62649	140714
