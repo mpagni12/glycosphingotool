@@ -1,6 +1,9 @@
 # results
 results*
 
+# Script for bulk submission to ChEBI
+analyses/chebi_lipidmaps_match/bulk_chebi_submission.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
