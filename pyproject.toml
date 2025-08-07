@@ -12,7 +12,8 @@ dependencies = [
   "networkx>=3.0",
   "openpyxl>=3.1",
   "rxnsmiles2rinchi",
-  "xlrd"
+  "xlrd",
+  "tqdm"
 ]
 readme = "README.md"
 requires-python = ">=3.9"
