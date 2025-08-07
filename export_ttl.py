@@ -1,10 +1,9 @@
 import re
 import os
 import pandas as pd
+import csv
 from rdkit import Chem
 from rdflib import Graph, Namespace, RDF, RDFS, URIRef, Literal
-import pandas as pd
-import os
 from datetime import datetime
 from rdkit import RDLogger
 RDLogger.DisableLog('rdApp.*')
@@ -43,7 +42,7 @@ g = Graph()
 RH = Namespace("http://rdf.rhea-db.org/")
 ANASVES_str = "http://rdf.example.org/anasves/"
 ANASVES = Namespace(ANASVES_str)
-GLYCOSPHINGO_str = "http://rdf.example.org/glycopshingolipids/"
+GLYCOSPHINGO_str = "http://rdf.example.org/glycopsphingolipids/"
 GLYCOSPHINGO = Namespace(GLYCOSPHINGO_str)
 GO = Namespace("http://purl.obolibrary.org/obo/GO_")
 CHEBI = Namespace("http://purl.obolibrary.org/obo/CHEBI_")
@@ -52,6 +51,7 @@ g.bind("rdf", RDF)
 g.bind("rdfs", RDFS)
 g.bind("rh", RH)
 g.bind("anasves", ANASVES)
+g.bind("glycosphingo", GLYCOSPHINGO)
 
 MNetIRI = ANASVES["glycopshingolipids"]
 g.add((MNetIRI, RDFS.label, Literal("glycosphingolipids")))
@@ -93,14 +93,14 @@ def export_glyco_ttl(input_folder):
 
     for _, row in df.iterrows():
         accession = row["RInChIKey"].replace("Web-RInChIKey=", "")
-        reaction_uri_str = f"{ANASVES}reaction_{accession.replace('-', '_')}"
+        reaction_uri_str = f"{ANASVES}{accession.replace('-', '_')}"
         reaction_uri = URIRef(reaction_uri_str)
         left_uri = URIRef(f"{reaction_uri_str}_L")
         right_uri = URIRef(f"{reaction_uri_str}_R")
         reaction_ref = URIRef(reaction_uri)
 
         # Basic reaction info
-        g.add((MNetIRI, ANASVES.includes, reaction_ref))
+        g.add((MNetIRI, ANASVES.reac, reaction_ref))
         g.add((reaction_ref, RH.accession, Literal(accession)))
         g.add((reaction_uri, RH.side, left_uri))
         g.add((reaction_uri, RH.side, right_uri))
@@ -118,7 +118,7 @@ def export_glyco_ttl(input_folder):
                 comp_id = inchikey.replace('-','_')
                 part_uri = URIRef(f"{reaction_uri}_compound_{comp_id}")
                 g.add((part_uri, RH.location, GO["0005575"]))
-                comp_uri = URIRef(f"{GLYCOSPHINGO_str}Compound_{comp_id}")
+                comp_uri = URIRef(f"{GLYCOSPHINGO_str}{comp_id}")
                 g.add((side_uri, RH[f"contains1"], part_uri))
                 g.add((part_uri, RH.compound, comp_uri))
 
@@ -127,14 +127,13 @@ def export_glyco_ttl(input_folder):
                     chebi = chebi.iloc[0]
                     chem_iri = CHEBI[str(chebi)]
                     g.add((comp_uri, RH.accession, Literal(f"CHEBI:{chebi}")))
-                    g.add((comp_uri, RH.chebi, chem_iri))
                 else:
                     sph = input_folder.replace('results_','').split('_')[0]
                     fa = input_folder.replace('results_sphing-4-enine_','').replace('results_sphinganine_','')
-                    compounds_total.append({'#id':comp_id, "name":f"{name}({sphinganine_to_position_code[sph]}/{fa_to_position_code[fa]})", "SMILES": smiles})
-                    #chem_iri = GLYCOSPHINGO[comp_id]
-                    # g.add((comp_uri, RH.accession, Literal(comp_id)))
-                    # g.add((comp_uri, RH.chebi, chem_iri))
+                    compounds_total.append({'#id':f"glycosphingo:{comp_id}", "name":f"{name}({sphinganine_to_position_code[sph]}/{fa_to_position_code[fa]})", "SMILES": smiles})
+                    g.add((comp_uri, RH.accession, Literal(comp_id)))
+                    chem_iri = GLYCOSPHINGO[str(comp_id)]
+                g.add((comp_uri, RH.chebi, chem_iri))
 
         add_compounds(left_uri, left_participants, reaction_uri_str)
         add_compounds(right_uri, right_participants, reaction_uri_str)
@@ -166,6 +165,7 @@ df['Mol_file/SDF']=''
 df['InChI']=''
 df['InChIKey']=''
 df['alt_id']=''
-df.to_csv('compounds_glycosphingolipids_for_metanetx.tsv', sep='\t', index=False, 
+df.to_csv('compounds_glycosphingolipids_for_metanetx.tsv', sep='\t', index=False,
+          line_terminator='\n', 
           columns=['#id','ori_name','name','synonym','formula','charge',
-                   'mass','xref','Mol_file/SDF','SMILES','InChI','InChIKey','alt_id'])
+                   'mass','xref','Mol_file/SDF','SMILES','InChI','InChIKey','alt_id'], quoting=csv.QUOTE_NONE)
